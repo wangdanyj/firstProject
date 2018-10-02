@@ -4,18 +4,36 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<style>
+			body{
+				min-width: 1000px;
+				margin: 0;
+			}
+			#tt{
+				width: 1000px;
+				margin: 0 auto;
+				border-collapse:collapse;
+			}
 			#tt td {
 				text-align: center;
 				background:#f5f5f5;
+				border-bottom:1px solid #dedede;
+				padding: 12px 0;
+				font-size: 14px;
+				color: #666;
 			}
-			
+			#tt th{
+				padding: 12px 0;
+				font-weight: normal;
+				font-size: 14px;
+			}
 			#baoming {
 				color: red;
 				width: 980px;
+				margin:20px auto 10px auto;
 			}
 			
 			.last-columm {
-				color: blue;
+				color: blue!important;
 			}
 			.page_num{
 				background-color: #fff;
@@ -36,7 +54,8 @@
 				height:40px;
 				color:#fff;
 			}
-			.query{background-color:#446097;
+			.query{
+				background-color:#446097;
 				border-width:1px;
 				border-style:solid;
 				border-color:lightgray;
@@ -46,20 +65,24 @@
 				color:#fff;
 				margin-left:50px;
 			}
-			.region{background-color:fff;
+			.region{
+				background-color:fff;
 				border-width:1px;
 				border-style:solid;
 				border-radius:6px;
 				width:300px;
 				height:40px;	
 			}
-			.title{font-size:30px;
-				   font-weight:20px;
-				   color:#fff;
+			.title{
+				font-size:30px;
+				font-weight:20px;
+				color:#fff;
+				line-height:100px;
 			}
-			.home-page{padding-left:1200px;
-						color:#fff;
-						
+			.home-page{
+				color:#fff;
+				line-height:100px;
+				margin-left:700px;
 			}
 		
 		</style>
@@ -68,25 +91,29 @@
 
 	<body>
 	
-		<div style="background-image:url(./test2/zhiz.png);"> 
-			<a1 class="title"> 商品住房购房登记</a1>
-			<a2 class="home-page">首页</a2>
+		<div style="background-image:url(./test2/zhiz.png);height:100px">
+			<div style="width:1000px;margin:0 auto;">
+				<span class="title"> 商品住房购房登记</span>
+				<span class="home-page">首页</span>
+			</div>
 		</div>
-		<p>项目情况</p>
-		<div style="text-align:center;background:#EAEAEA;">
-			<select style="width:200px;height:30px;border-radius:5px;">
+		<div style="margin:0 auto;width:1000px;margin-top:40px;margin-bottom:20px;">
+			<span>项目情况</span>
+			<span>></span>
+			<hr style="float:right;width:922px;margin-left:78px;margin-top:-8px;"></hr>
+		</div>
+		<div style="text-align:center;background:#EAEAEA;clear: both;">
+			<select style="width:200px;height:30px;border-radius:5px;margin-top:20px;margin-bottom:10px;">
 				<option value="所有区域">所有区域</option>
 			</select>
 			<button class="query">查询</button>
 		</div>
-		<table>
-			<tr>
-				<td id=baoming>特别提示：报名登记的项目已截止报名或已进入审核阶段的，不能再进行撤销或变更购房登记信息；购房登记人及其家庭成员在所申报项目选房结束前不能申报其他项目。</td>
-			</tr>
+		<div id="baoming">特别提示：报名登记的项目已截止报名或已进入审核阶段的，不能再进行撤销或变更购房登记信息；购房登记人及其家庭成员在所申报项目选房结束前不能申报其他项目。</div>
+			
 		</table>
 		<table id="tt">
-			<tr style="background:#d3d3d3;border-style:solid;boder-color:#eaeaea;">
-				<th></th>
+			<tr style="background:#d3d3d3;">
+				<th style="width:40px;"></th>
 				<th>区域</th>
 				<th style="width:80px;">项目名称</th>
 				<th>预售证号</th>
@@ -156,7 +183,7 @@
 				<td class="last-columm">查看</td>
 			</tr>
 		</table>
-		<div style="text-align: center;">
+		<div style="text-align: center;margin-top:20px;">
 			<button class="page_num">首页</button>
 			<button class="page_num"><</button>
 			<button class="page_num">1</button>
@@ -167,7 +194,7 @@
 			<button class="page_num">></button>
 			<button class="page_num">尾页</button>
 		</div>
-		<div style="text-align: center;margin:10px">每日9：00到18:00为购房登记申请时间</div>
+		<div style="text-align: center;margin:10px;font-size:14px;">每日9：00到18:00为购房登记申请时间</div>
 		<div style="text-align: center;margin:10px">
 			<button class="page_lastnum">下一步</button>
 		</div>
