@@ -1,0 +1,19 @@
+﻿这些标签可用在 head 部分
+<head>
+    <title>...</title>标题
+ 在<title>和</title>标签之间的文字内容是网页的标题信息，它会出现在浏览器的标题栏中。网页的title标签用于告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出网页的主题。每个网页的内容都是不同的，每个网页都应该有一个独一无二的title
+    <meta>声明
+    <link>链接
+    <style>...</style>样式
+    <script>...</script>脚本
+</head>
+<br />标签是一个空标签，没有HTML内容的标签就是空标签，空标签只需要写一个开始标签，这样的标签有<br />、<hr />和<img />
+ 常用的块状元素有：
+
+<div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form>
+常用的内联(行内）元素有：
+
+<a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code>
+常用的内联块状元素有：
+
+<img>、<input>

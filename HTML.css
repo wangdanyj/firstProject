@@ -1,0 +1,47 @@
+
+.outMyTest{
+	width:200px;
+	height:65px;
+	font-size:14px;
+	background-color:orange;
+	text-align: center;
+	line-height: 65px;
+	color:black;
+}
+#outMyTest{
+	width:200px;
+	height:65px;
+	font-size:5px;
+	background-color:gray!imprtant;
+	text-align: center;
+	line-height: 65px;
+	color:burlywood;
+}
+.baidudiv{
+	margin: 50px;
+	border:10px solid red;
+	padding: 50px;
+	width:150px;
+	height:150px;
+	box-sizing: border-box;
+}
+h1{
+	color:red;
+	font-size: 18px;
+}
+
+
+table img{
+	width: 200px;
+	height: 200px;
+}
+
+table,img{
+	border-radius:10px;
+}
+h1,h2,h3,h4,h5{
+	
+}
+table{
+	
+}

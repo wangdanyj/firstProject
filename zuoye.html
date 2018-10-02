@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style>
+			#tt td {
+				text-align: center;
+				background:#f5f5f5;
+			}
+			
+			#baoming {
+				color: red;
+				width: 980px;
+			}
+			
+			.last-columm {
+				color: blue;
+			}
+			.page_num{
+				background-color: #fff;
+				border-width: 1px;
+				border-style: solid;
+				border-color:lightgray;
+				/*border:1px solid darkgray;*/
+				padding:0 8px;
+				height: 30px;
+			}
+			.page_lastnum{
+				background-color:#446097;
+				border-width:1px;
+				border-style:solid;
+				border-color:lightgray;
+				border-radius:6px;
+				width:300px;
+				height:40px;
+				color:#fff;
+			}
+			.query{background-color:#446097;
+				border-width:1px;
+				border-style:solid;
+				border-color:lightgray;
+				border-radius:6px;
+				width:300px;
+				height:40px;
+				color:#fff;
+				margin-left:50px;
+			}
+			.region{background-color:fff;
+				border-width:1px;
+				border-style:solid;
+				border-radius:6px;
+				width:300px;
+				height:40px;	
+			}
+			.title{font-size:30px;
+				   font-weight:20px;
+				   color:#fff;
+			}
+			.home-page{padding-left:1200px;
+						color:#fff;
+						
+			}
+		
+		</style>
+		<title>商品住房购房登记表</title>
+	</head>
+
+	<body>
+	
+		<div style="background-image:url(./test2/zhiz.png);"> 
+			<a1 class="title"> 商品住房购房登记</a1>
+			<a2 class="home-page">首页</a2>
+		</div>
+		<p>项目情况</p>
+		<div style="text-align:center;background:#EAEAEA;">
+			<select style="width:200px;height:30px;border-radius:5px;">
+				<option value="所有区域">所有区域</option>
+			</select>
+			<button class="query">查询</button>
+		</div>
+		<table>
+			<tr>
+				<td id=baoming>特别提示：报名登记的项目已截止报名或已进入审核阶段的，不能再进行撤销或变更购房登记信息；购房登记人及其家庭成员在所申报项目选房结束前不能申报其他项目。</td>
+			</tr>
+		</table>
+		<table id="tt">
+			<tr style="background:#d3d3d3;border-style:solid;boder-color:#eaeaea;">
+				<th></th>
+				<th>区域</th>
+				<th style="width:80px;">项目名称</th>
+				<th>预售证号</th>
+				<th style="width:80px;">预售范围</th>
+				<th>住房套数</th>
+				<th>开发商咨询电话</th>
+				<th style="width:100px;">登记开始时间</th>
+				<th style="width:100px;">登记结束时间</th>
+				<th>选房结束时间</th>
+				<th>项目报名状态</th>
+				<th>登记规则</th>
+			</tr>
+			<tr>
+				<td><input name="" type="checkbox" value="" /></td>
+				<td>郫都区</td>
+				<td>成都后花园二期B区</td>
+				<td>101664</td>
+				<td>41栋</td>
+				<td>312</td>
+				<td>028-61838283</td>
+				<td>2018-09-15 09:00:00</td>
+				<td>2018-09-17 18:00:00</td>
+				<td>2018-10-13</td>
+				<td>正在报名</td>
+				<td class="last-columm">查看</td>
+			</tr>
+			<tr>
+				<td><input name="" type="checkbox" value="" /></td>
+				<td>金堂县</td>
+				<td>金都华庭二期</td>
+				<td>604</td>
+				<td>第4栋</td>
+				<td>386</td>
+				<td>028-84926888</td>
+				<td>2018-09-15 09:00:00</td>
+				<td>2018-09-17 18:00:00</td>
+				<td>2018-09-29</td>
+				<td>正在报名</td>
+				<td class="last-columm">查看</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>天府新区</td>
+				<td>保利天空之城</td>
+				<td>101655</td>
+				<td>1号地块8、9、10号楼;2号地块4、5、6号楼</td>
+				<td>545</td>
+				<td>028-85000808</td>
+				<td>2018-09-14 09:00:00</td>
+				<td>2018-09-16 18:00:00</td>
+				<td>2018-11-02</td>
+				<td>报名结束</td>
+				<td class="last-columm">查看</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>龙泉驿区</td>
+				<td>林溪康城二期</td>
+				<td>101654</td>
+				<td>10栋</td>
+				<td>422</td>
+				<td>028-84848855</td>
+				<td>2018-09-14 09:00:00</td>
+				<td>2018-09-16 18:00:00</td>
+				<td>2018-11-02</td>
+				<td>报名结束</td>
+				<td class="last-columm">查看</td>
+			</tr>
+		</table>
+		<div style="text-align: center;">
+			<button class="page_num">首页</button>
+			<button class="page_num"><</button>
+			<button class="page_num">1</button>
+			<button class="page_num">2</button>
+			<button class="page_num">3</button>
+			<button class="page_num">4</button>
+			<button class="page_num">5</button>
+			<button class="page_num">></button>
+			<button class="page_num">尾页</button>
+		</div>
+		<div style="text-align: center;margin:10px">每日9：00到18:00为购房登记申请时间</div>
+		<div style="text-align: center;margin:10px">
+			<button class="page_lastnum">下一步</button>
+		</div>
+	</body>
+</html>
